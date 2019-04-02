@@ -66,15 +66,15 @@ def morris_pratt(text, pattern):
 
 
 def main():
-    # Dummy test case for now
-    text_str = "abajdiasdabaababaaaaa"
-    pattern_str = "abaababa"
-    pattern = MP_String(pattern_str)
-
-
     # TODO Open test file and read input
     # For each test file in this directory: run it and print results
-    # Profile the three algorithms
+    # Read input file to get string and pattern
+    file = open(sys.argv[1], "r")
+    text_str = file.readline()
+    pattern_str = file.readline()
+    pattern = MP_String(pattern_str)
+
+   # Profile the three algorithms
     # Start profiler
     pr = cProfile.Profile()
     pr.enable()
@@ -89,6 +89,7 @@ def main():
     ps = pstats.Stats(pr, stream=s).sort_stats(sortBy)
     ps.print_stats()
     print(s.getvalue())
+    file.close()
 
 if __name__ == "__main__":
     main()
