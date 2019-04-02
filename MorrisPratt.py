@@ -66,7 +66,6 @@ def morris_pratt(text, pattern):
 
 
 def main():
-    # TODO Open test file and read input
     # For each test file in this directory: run it and print results
     # Read input file to get string and pattern
     file = open(sys.argv[1], "r")

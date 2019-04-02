@@ -36,7 +36,6 @@ def main():
     file = open(sys.argv[1], "r")
     text_str = file.readline()
     pattern_str = file.readline()
-    pattern = MP_String(pattern_str)
 
     # Profile the three algorithms
     # Start profiler
