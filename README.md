@@ -1,3 +1,4 @@
 # CSE5211-Team-Project
-Run instructions:
+**Run instructions:**
+
   python .\MorrisPratt.py stressTest.txt
