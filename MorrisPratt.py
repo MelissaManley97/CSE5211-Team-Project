@@ -62,6 +62,7 @@ def morris_pratt(text, pattern):
         else:
             j = 0
     #  Pattern not found
+
     return -1, -1
 
 
@@ -73,7 +74,7 @@ def main():
     pattern_str = file.readline()
     pattern = MP_String(pattern_str)
 
-   # Profile the three algorithms
+    # Profile the three algorithms
     # Start profiler
     pr = cProfile.Profile()
     pr.enable()
