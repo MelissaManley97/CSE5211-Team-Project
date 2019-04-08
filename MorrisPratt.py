@@ -39,7 +39,7 @@ def compute_border(pattern):
 # @param  text      The block of text
 # @param  pattern   The pattern to find within the text
 # @return Pair of the start and end indices of where in text the pattern is located
-# If the text is not found in the pattern, this function returns (-1,-1)
+# If the pattern is not found in the text, this function returns (-1,-1)
 def morris_pratt(text, pattern):
     # Same as brute force except for how shifts are made when there is a mismatch
     i = 0
