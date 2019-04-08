@@ -9,7 +9,7 @@ import time
 # @param  text      The block of text
 # @param  pattern   The pattern to find within the text
 # @return Pair of the start and end indices of where in text the pattern is located
-# If the text is not found in the pattern, this function returns (-1,-1)
+# If the pattern is not found in the text, this function returns (-1,-1)
 def brute_force(text, pattern):
     i = 0
     n = len(text)
