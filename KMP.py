@@ -35,7 +35,7 @@ def KMPSearch(pattern, text):
 			return (i - j), (i-1)
 
 		# If there is a mismatch after j matches
-		elif text[i] != pattern[j] and i < N:
+		elif i < N and text[i] != pattern[j]:
 			# Knuth-Morris-Pratt Shift
 			if j == 0:
 				i += 1
